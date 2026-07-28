@@ -9,6 +9,10 @@ const bot = require('./bot/bot')
 
 const app = express()
 
+app.get('/products', (req, res) => {
+  res.send('DIRECT ROUTE WORKING')
+})
+
 app.use(cors())
 app.use(express.json())
 
