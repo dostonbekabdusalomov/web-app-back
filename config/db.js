@@ -6,7 +6,7 @@ const connectDB = async () => {
     console.log('MongoDB ulandi')
   } catch (err) {
     console.error('MongoDB xato:', err)
-    process.exit(1) // 💥 serverni to‘xtatadi
+    process.exit(1) // 💥 serverni 
   }
 }
 
