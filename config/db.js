@@ -5,7 +5,8 @@ const connectDB = async () => {
     await mongoose.connect(process.env.MONGO_URI)
     console.log('MongoDB ulandi')
   } catch (err) {
-    console.log(err)
+    console.error('MongoDB xato:', err)
+    process.exit(1) // 💥 serverni to‘xtatadi
   }
 }
 
